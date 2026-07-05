@@ -38,7 +38,7 @@ export default function Tour({ src, edit = false }) {
 
   // Komentáre: globálny prepínač (s/bez) + evidencia už automaticky prehratých
   // záberov (aby sa audio prehralo len raz pri prvom vstupe).
-  const [commentsOn, setCommentsOn] = useState(true);
+  const [commentsOn, setCommentsOn] = useState(false);
   const playedRef = useRef(new Set());
 
   // drž refy synchronizované so stavom
